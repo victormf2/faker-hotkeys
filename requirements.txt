@@ -1,0 +1,4 @@
+pynput
+PyQt5
+faker
+pyperclip
