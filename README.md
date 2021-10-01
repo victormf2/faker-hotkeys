@@ -13,8 +13,19 @@ Com apenas 2 atalhos de teclado, você facilmente gera diversos tipos de informa
 3. Execute o main.py (de preferência em background)
 4. Aperte Ctrl + Alt + H e aparecerá uma janela com os comandos disponíveis
 
+Eu só testei com python 3.9 no Windows 10, mas as bibliotecas utilizadas teoricamente são cross-platform, então talvez funcione também em alguns Linux e macOS
+
 ![demonstração](https://i.ibb.co/GWkHNps/ezgif-com-gif-maker.gif)
 
+## Comandos
+### E
+Gera um e-mail aleatório.
+### P
+Gera uma alternativa aleatória de um e-mail próprio. Por exemplo, se o seu e-mail for bananas<k>@</k>hotmail.com, ele vai gerar bananas+asd<k>@</k>hotmail.com, bananas+qwe<k>@</k>hotmail.com, etc. Assim você pode reutilizar o seu e-mail nos formulários que estiver testando. *Precisa trocar `bananas@bananas.com` pelo seu e-mail no `main.py`.*
+### C
+Gera um CPF aleatório.
+### T
+Gera um [número de telefone falso que não existe](https://web.facebook.com/numerosqnexist).
 
 ## Customização
 Os atalhos usam o esquema de [hotkeys do pynput](https://pynput.readthedocs.io/en/latest/keyboard.html#global-hotkeys)
@@ -25,7 +36,7 @@ Recomendo usar teclas únicas aqui, para não conflitar com os atalhos do progra
 
 Os itens do array `self.hotkeys`:
 
-1. tecla ou atalho
+1. tecla ou atalho reconhecido pelo pynput
 2. rótulo do comando
 3. descrição do comando
 4. função que irá executar com o comando
